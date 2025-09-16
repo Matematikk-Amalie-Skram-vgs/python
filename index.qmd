@@ -1,9 +1,13 @@
 ---
 title: "Installere og åpne Jupyter Lab"
-format: html
+format: 
+    html:
+        embed-resources: true
 ---
 
-::: callout-tip
+En kort guide for å installere og åpne Jupyter Lab med miniconda. 
+
+::: {.callout-tip collapse="true"}
 ## Guiden på 1-2-3
 
 [1) Installere miniconda]
@@ -13,7 +17,11 @@ format: html
 [3) Åpne og kjøre](#åpne-og-kjøre)
 :::
 
-## 1) Installere miniconda
+⏱️ Sist oppdatert: 16.09.2025
+
+---
+
+## 1️⃣ Installere miniconda
 
 Miniconda finner du [her](https://www.anaconda.com/download/success).
 
@@ -33,7 +41,7 @@ Når du har lastet ned filen:
 
 -   OBS: Du trenger **ikke** å lage bruker eller å inn på nettsiden som åpner seg.
 
-## 2) Lage et miljø med Jupyter Lab og viktige miljø
+## 2️⃣ Lage et miljø med Jupyter Lab og viktige miljø
 
 Resten av installasjonen skjer i terminalen. Det er litt ulikt på mac og windows. Sjekk aktuell fane under:
 
@@ -57,11 +65,11 @@ I programmet skal du skrive litt kode. Trykk {{< kbd Enter >}} etter hver linje.
 conda create -n matte-1t jupyterlab numpy matplotlib pandas
 ```
 
-Når programmet har tenkt seg om får du opp `Proceed ([y]/n)?`\`. Trykk {{< kbd Enter >}} for å fortsette.
+Når programmet har tenkt seg om får du opp `Proceed ([y]/n)?`. Trykk {{< kbd Enter >}} for å fortsette.
 
 Nå har vi laget et *miljø* (et roterom) der vi har installert alt vi trenger. Blir det kluss, eller vi trenger andre pakker og programmer i andre fag kan vi lage nye miljøer.
 
-## 3) Åpne og kjøre {#åpne-og-kjøre}
+## 3️⃣ Åpne og kjøre {#åpne-og-kjøre}
 
 ::: callout-tip
 ## Tips
