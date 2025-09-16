@@ -1,0 +1,1 @@
+Oppskrift for installering av miniconda og jupyter lab
