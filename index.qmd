@@ -1,0 +1,96 @@
+---
+title: "Installere og åpne Jupyter Lab"
+format: html
+---
+
+::: callout-tip
+## Guiden på 1-2-3
+
+[1) Installere miniconda]
+
+[2) Lage et miljø med Jupyter Lab og viktige miljø]
+
+[3) Åpne og kjøre](#åpne-og-kjøre)
+:::
+
+## 1) Installere miniconda
+
+Miniconda finner du [her](https://www.anaconda.com/download/success).
+
+::: callout-important
+## Viktig
+
+Pass på at du laster ned **Miniconda** (og ikke "Distribution")
+
+![](img/laste-ned.png){fig-align="center"}
+:::
+
+Når du har lastet ned filen:
+
+-   åpne nedlastinger, klikk på filen
+
+-   følg installasjonsveiledningen.
+
+-   OBS: Du trenger **ikke** å lage bruker eller å inn på nettsiden som åpner seg.
+
+## 2) Lage et miljø med Jupyter Lab og viktige miljø
+
+Resten av installasjonen skjer i terminalen. Det er litt ulikt på mac og windows. Sjekk aktuell fane under:
+
+::: panel-tabset
+## Mac
+
+Åpne programmet "Terminal"
+
+Du kan søke etter appen med Spotlight. Enten forstørrelsesglasset på menylinjen øverst eller snarveien {{< kbd Cmd-mellomrom >}} på tastaturet.
+
+## Windows
+
+Åpne programmet "Anaconda Prompt"
+
+Du kan søke etter appen fra Start-menyen. Trykk {{< kbd Windows >}}-knappen på tastaturet
+:::
+
+I programmet skal du skrive litt kode. Trykk {{< kbd Enter >}} etter hver linje. Husk at du kan kopiere inn kodelinjene.
+
+``` bash
+conda create -n matte-1t jupyterlab numpy matplotlib pandas
+```
+
+Når programmet har tenkt seg om får du opp `Proceed ([y]/n)?`\`. Trykk {{< kbd Enter >}} for å fortsette.
+
+Nå har vi laget et *miljø* (et roterom) der vi har installert alt vi trenger. Blir det kluss, eller vi trenger andre pakker og programmer i andre fag kan vi lage nye miljøer.
+
+## 3) Åpne og kjøre {#åpne-og-kjøre}
+
+::: callout-tip
+## Tips
+
+Det som står videre her er måten du åpner Jupyter Lab på. **Alltid**.
+:::
+
+**1) Åpne "Anaconda Prompt" (Windows) / "Terminal" (Mac).**
+
+**2) Skriv inn**
+
+``` bash
+conda activate matte-1t
+```
+
+Du ser at du har gjort rett om det ikke står `(base)` men `(matte-1t)` foran brukernavnet ditt.
+
+**3) Skriv inn**
+
+``` bash
+jupyter lab
+```
+
+Nå åpner programmet seg i en fane.
+
+::: callout-tip
+## Lukke
+
+Når du er ferdig med programmet lukker du fanen i nettleseren.
+
+**I tillegg** går du tilbake til Anaconda Prompt / Terminal og trykker {{< kbd ctrl-c >}} på tastaturet.
+:::
