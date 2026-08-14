@@ -3,6 +3,7 @@ title: "Installera og opna Jupyter Lab"
 format: 
     html:
         embed-resources: true
+        output-file: "index.html"
 ---
 
 Ein kort guide for å installera og opna Jupyter Lab med Miniforge.
@@ -72,8 +73,10 @@ Du kan søka etter appen frå Start-menyen. Trykk {{< kbd Windows >}}-knappen p�
 I programmet/terminalen skal du skriva litt kode. Trykk {{< kbd Enter >}} etter kvar linje. Hugs at du kan kopiera inn kodelinjene herfrå. Du treng ikkje skriva av.
 
 ``` bash
-conda create -n matte-1t python=3.12 jupyterlab numpy matplotlib pandas scipy
+conda create -n matte-1t python=3.12 jupyterlab numpy matplotlib pandas scipy ipywidgets
 ```
+
+**OBS:** dette er eit forslag, du kan legga til eller trekka frå pakkar etter behov. 
 
 Når programmet har tenkt seg om (av og til ganske lenge) får du opp `Proceed ([y]/n)?`. Trykk {{< kbd Enter >}} for å halda fram.
 
