@@ -18,13 +18,13 @@ Ein kort guide for å installera og opna Jupyter Lab med Miniforge.
 [3) Opna og køyra](#opna)
 :::
 
-⏱️ Sist oppdatert: 14.08.2026
+⏱️ Sist oppdatert: 14.09.2026
 
 ---
 
 ## 1️⃣ Installera Miniforge {#installera}
 
-Miniforge lastar du ned [her](https://conda-forge.org/download/).
+Miniforge lastar du ned [her](https://conda-forge.org/miniforge/).
 
 ::: callout-important
 ## Viktig
@@ -48,9 +48,8 @@ Når du har lasta ned fila:
 
 -   følg installasjonsrettleiinga
 
--   på Windows: la det stå kryss ved **«Create start menu shortcuts»**
+-   på Windows: la det stå kryss ved **«Create shortcuts» og «Register Miniforge3 as my default...»** 
 
--   **OBS:** Du treng **ikkje** laga brukar eller logga inn nokon stad.
 
 ## 2️⃣ Laga eit miljø med Jupyter Lab og viktige pakkar {#miljo}
 
