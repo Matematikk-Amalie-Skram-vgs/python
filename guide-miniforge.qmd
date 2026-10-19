@@ -58,7 +58,7 @@ Når du har lasta ned fila:
 
 -   følg installasjonsrettleiinga
 
--   på Windows: la det stå kryss ved **«Create start menu shortcuts»**
+-   på Windows: la det stå kryss ved **«Create shortcuts» og «Register Miniforge3 as my default...»** 
 
 -   **OBS:** Du treng **ikkje** laga brukar eller logga inn nokon stad.
 
