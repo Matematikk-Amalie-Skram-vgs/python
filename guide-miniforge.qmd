@@ -1,9 +1,18 @@
 ---
 title: "Installera og opna Jupyter Lab"
+lang: nn
 format: 
     html:
         embed-resources: true
         output-file: "index.html"
+        format-links: false
+    typst:
+        papersize: a4
+        margin:
+            x: 2.2cm
+            y: 2.2cm
+        fontsize: 11pt
+        toc: false
 ---
 
 Ein kort guide for å installera og opna Jupyter Lab med Miniforge.
@@ -18,7 +27,7 @@ Ein kort guide for å installera og opna Jupyter Lab med Miniforge.
 [3) Opna og køyra](#opna)
 :::
 
-⏱️ Sist oppdatert: 14.08.2026
+⏱️ Sist oppdatert: 19.10.2026
 
 ---
 
@@ -26,7 +35,8 @@ Ein kort guide for å installera og opna Jupyter Lab med Miniforge.
 
 Miniforge lastar du ned [her](https://conda-forge.org/download/).
 
-::: callout-important
+:::{.callout-important}
+
 ## Viktig
 
 Vel fila som passar til maskina di:
@@ -39,7 +49,7 @@ Vel fila som passar til maskina di:
 
 Er du usikker på kva slags Mac du har? Klikk på eplet øvst til venstre → «Om denne maskinen» → sjå på linja «Brikke» eller «Prosessor».
 
-![](img/laste-ned-v2.png){fig-align="center"}
+![](img/laste-ned-v2.png){fig-align="center" width="80%"}
 :::
 
 Når du har lasta ned fila:
@@ -52,10 +62,15 @@ Når du har lasta ned fila:
 
 -   **OBS:** Du treng **ikkje** laga brukar eller logga inn nokon stad.
 
+::: {.content-visible when-format="typst"}
+{{< pagebreak >}}
+:::
+
 ## 2️⃣ Laga eit miljø med Jupyter Lab og viktige pakkar {#miljo}
 
 Resten av installasjonen skjer i terminalen. Det er litt ulikt på Mac og Windows. Sjå aktuell fane under:
 
+::: {.content-visible when-format="html"}
 ::: panel-tabset
 ## Mac
 
@@ -68,6 +83,13 @@ Du kan søka etter appen med Spotlight: anten forstørringsglaset på menylinja 
 Opne programmet «Miniforge Prompt».
 
 Du kan søka etter appen frå Start-menyen. Trykk {{< kbd Windows >}}-knappen på tastaturet.
+:::
+:::
+
+::: {.content-visible when-format="typst"}
+**Mac:** Opne programmet «Terminal». Du kan søka etter appen med Spotlight: anten forstørringsglaset på menylinja øvst på skjermen eller snarvegen {{< kbd Cmd-mellomrom >}} på tastaturet.
+
+**Windows:** Opne programmet «Miniforge Prompt». Du kan søka etter appen frå Start-menyen. Trykk {{< kbd Windows >}}-knappen på tastaturet.
 :::
 
 I programmet/terminalen skal du skriva litt kode. Trykk {{< kbd Enter >}} etter kvar linje. Hugs at du kan kopiera inn kodelinjene herfrå. Du treng ikkje skriva av.
@@ -82,9 +104,13 @@ Når programmet har tenkt seg om (av og til ganske lenge) får du opp `Proceed (
 
 No har me laga eit *miljø* (eit roterom) der me har installert alt me treng. Vert det kluss, eller me treng andre pakkar og program i andre fag, kan me laga nye miljø.
 
+::: {.content-visible when-format="typst"}
+{{< pagebreak >}}
+:::
+
 ## 3️⃣ Opna og køyra {#opna}
 
-::: callout-tip
+::: {.callout-tip}
 ## Tips
 
 Det som står vidare her er måten du opnar Jupyter Lab på. **Alltid**.
@@ -108,12 +134,40 @@ jupyter lab
 
 No opnar programmet seg i ei fane i nettlesaren.
 
-::: callout-tip
+::: {.callout-tip}
 ## Lukka
 
 Når du er ferdig med programmet, lukkar du fana i nettlesaren.
 
 **I tillegg** går du tilbake til Miniforge Prompt / Terminal og trykkjer {{< kbd ctrl-c >}} på tastaturet.
+:::
+
+::: {.callout-note collapse="false"}
+
+## Gløymt namnet på env-et, eller har det blitt for mange?
+
+Eit par nyttige kommandoar:
+
+---
+
+```{.bash}
+conda env list
+```
+
+gjev deg ei rekke med dei installerte miljøa dine. 
+
+---
+
+```{.bash}
+conda env remove -n mitt-miljo
+```
+
+slettar miljøet `mitt-miljo` (bytt ut med rett namn).
+
+:::
+
+::: {.content-visible when-format="typst"}
+{{< pagebreak >}}
 :::
 
 ::: {.callout-warning collapse="true"}
